@@ -8,13 +8,14 @@ body {
   overflow-x: hidden;
 }
 nav {
+  position: relative;
   background-color: black;
   height: 100px;
   padding: 20px;
   display: flex;
   justify-content: center;
   max-width: 100vw;
-
+  z-index: 1;
 }
 .logo {
   color: white;
@@ -54,20 +55,20 @@ i {
 
 .altr {
   backdrop-filter: blur(5px);
-  border: 1px solod #222;
+  border: 1px solid #222;
   box-shadow: 0 0 2px 2px #00000033;
-  background-color: ;
-  width: 250px;
+  width: 100%;
   height: 250px;
   padding: 30px;
   border-radius: 10px;
   position: absolute;
-  right: -100%;
-  transition: .5s;
-  z-index: 1;
+  top: -400px;
+  transition: .5s linear;
+  z-index: 0;
+  font-weight: bold;
 }
 .altr.active {
-  right: 0;
+  top: 0;
 }
 .altr li {
   text-align: center;
