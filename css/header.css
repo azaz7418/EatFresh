@@ -4,6 +4,9 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+body {
+  overflow-x: hidden;
+}
 nav {
   background-color: black;
   height: 100px;
@@ -11,6 +14,7 @@ nav {
   display: flex;
   justify-content: center;
   max-width: 100vw;
+
 }
 .logo {
   color: white;
@@ -52,7 +56,7 @@ i {
   backdrop-filter: blur(5px);
   border: 1px solod #222;
   box-shadow: 0 0 2px 2px #00000033;
-  background-color: #1c95e057;
+  background-color: ;
   width: 250px;
   height: 250px;
   padding: 30px;
@@ -84,6 +88,7 @@ nav .fa-solid:hover {
 }
 
 @media (min-width:499px) {
+  
   nav {
     height: 100px;
   }
