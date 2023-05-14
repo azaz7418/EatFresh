@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+nav {
+  background-color: black;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+}
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 13px;
+}
+.ul {
+  margin-left: auto;
+  display: none;
+}
+.ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+}
+.ul li a {
+  color: white;
+}
+.ul li a:hover {
+  color: tomato;
+}
+
+i {
+  color: white;
+  text-align: center;
+  margin: 20px;
+  font-size: 35px;
+  margin-left: auto;
+  z-index: 1;
+}
+
+
+.navManu {
+  position: relative;
+}
+
+.altr {
+  backdrop-filter: blur(5px);
+  border: 1px solod #222;
+  box-shadow: 0 0 2px 2px #00000033;
+  background-color: #1c95e057;
+  width: 250px;
+  height: 250px;
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  right: -100%;
+  transition: .5s;
+  z-index: 1;
+}
+.altr.active {
+  right: 0;
+}
+.altr li {
+  text-align: center;
+  margin: 20px;
+  list-style: none;
+  
+}
+.altr li a {
+  color: black;
+  font-size: 20px;
+}
+.altr li a:hover {
+  color: tomato;
+}
+
+nav .fa-solid:hover {
+  color: tomato;
+}
+
+@media (min-width:499px) {
+  nav {
+    height: 100px;
+  }
+  .navManu {
+    display: none;
+  }
+  .ul {
+    display: inherit;
+    
+  }
+  li a {
+    margin: 10px;
+    font-size: 30px;
+  }
+  li a:hover {
+    color: black;
+  }
+  nav .fa-solid {
+    display: none;
+  }
+}

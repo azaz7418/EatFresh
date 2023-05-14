@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Eat-Healthy</title>
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/header.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
+  
+  
+  
+  <nav>
+    <label class="logo"><span>Eat</span> Fresh</label>
+    <ul class="ul">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <i onclick="clickHandle()" class="fa-solid fa-bars"></i>
+  </nav>
+  <div class="navManu">
+    <ul id="altr" class="altr">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+  
+
+  
+  
   <div class="prothom">
     <div class="fst1">
       <h1><span>Skip</span> The Diet, Just Eat Healthy With Food Network</h1>
@@ -20,11 +52,11 @@
       </p>
       <button>Order Food</button>
     </div>
-
+    
     <img src="images/female/Group 8425.png" alt="female">
-
+    
   </div>
-
+  
   <div class="snd">
     <img src="images/female/Person Image.png" alt="">
     <div class="snd1">
@@ -37,36 +69,39 @@
       </p>
       <button>Contact Me</button>
     </div>
-
+    
   </div>
-
+  
   <div class="trd">
     <h2>My recipies</h2>
     <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s.
     </p>
   </div>
-
-
+  
+  
   <div class="frt">
-
+    
     <div class="frt1">
       <img src="images/food/Project Cover.jpg" alt="">
       <h2>Recipie Title</h2>
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s.
       </p>
     </div>
-
+    
     <div class="frt1">
       <img src="images/food/Project Cover.jpg" alt="">
       <h2>Recipie Title</h2>
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s.
       </p>
     </div>
   </div>
-
+  
   <div class="lst">
     <div>
       <h1>700k</h1>
@@ -80,19 +115,31 @@
         Instagram Followers
       </p>
     </div>
-
+    
     <div>
       <h1>100k</h1>
       <p>
         Dribbble Shot Likes
       </p>
-
+      
     </div>
-
+    
   </div>
-<footer class="foter">
-  <h3><span>Eat</span> Fresh</h3>
-  <p>Eat healthy to live healthy. Live healthy to live happy.</p>
-</footer>
+  <footer class="foter">
+    <h3><span>Eat</span> Fresh</h3>
+    <p>
+      Eat healthy to live healthy. Live healthy to live happy.
+    </p>
+  </footer>
+  
+  
+  
+  <script>
+    function clickHandle() {
+document.getElementById("altr").classList.toggle("active")
+}
+  </script>
+  
 </body>
+
 </html>
